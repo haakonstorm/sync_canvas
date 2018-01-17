@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1516117056656.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "333617160",
+    "id" : "317C56C5",
+    "lastKnownWriteTime" : 1516151621,
+    "last_content_update" : 1516151621903,
+    "path" : "~/Dropbox/Projects/sync_canvas/sync_canvas.R",
+    "project_path" : "sync_canvas.R",
+    "properties" : {
+        "cursorPosition" : "19,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
