@@ -5,9 +5,8 @@
 # ---------------------------------------------
 
 # ---------------------------------------------
-# Modify these paths
+# Modify this path
 # ---------------------------------------------
-sync_canvas_dir <- '/Users/jordanfarrer/Dropbox/Projects/sync_canvas'
 file_dir <- '/Users/jordanfarrer/Dropbox/Wharton/Spring 2018/'
 
 # ---------------------------------------------
@@ -19,17 +18,19 @@ file_dir <- '/Users/jordanfarrer/Dropbox/Wharton/Spring 2018/'
 # ---------------------------------------------
 
 # ---------------------------------------------
+# Loads the two required packages
+# ---------------------------------------------
+suppressPackageStartupMessages(require(here))
+suppressPackageStartupMessages(require(jsonlite))
+suppressPackageStartupMessages(require(tidyverse))
+
+# ---------------------------------------------
 # Sets the Canvas API path
 # Access the API token in .Renviron
 # ---------------------------------------------
 canvas_api <- 'https://canvas.instructure.com/api/v1/'
+sync_canvas_dir <- here::here()
 access_token <- Sys.getenv("CANVAS_TOKEN")
-
-# ---------------------------------------------
-# Loads the two required packages
-# ---------------------------------------------
-suppressPackageStartupMessages(library(jsonlite))
-suppressPackageStartupMessages(library(tidyverse))
 
 # ---------------------------------------------
 # Load the course list to synced and 
