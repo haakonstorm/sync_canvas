@@ -1,3 +1,3 @@
 # Sync Canvas
 A simple solution to sync course files on Canvas to a local machine
-![](sync_canvas.png)
+See: https://jrfarrer.github.io/post/sync-canvas-files/ for a guide to setup.
