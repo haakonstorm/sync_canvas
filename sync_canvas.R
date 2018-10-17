@@ -7,7 +7,8 @@
 # ---------------------------------------------
 # Modify this path
 # ---------------------------------------------
-file_dir <- '/Users/jordanfarrer/Dropbox/Wharton/Spring 2018/'
+# file_dir <- '/Users/jordanfarrer/Dropbox/Wharton/Spring 2018/'
+file_dir <- '/Users/hsh/Library/Mobile Documents/com~apple~CloudDocs/CANVAS' 
 
 # ---------------------------------------------
 #
@@ -28,7 +29,9 @@ suppressPackageStartupMessages(require(tidyverse))
 # Sets the Canvas API path
 # Access the API token in .Renviron
 # ---------------------------------------------
-canvas_api <- 'https://canvas.instructure.com/api/v1/'
+
+# canvas_api <- 'https://canvas.instructure.com/api/v1/'
+canvas_api <- 'https://nmbu.instructure.com/api/v1/'
 sync_canvas_dir <- here::here()
 access_token <- Sys.getenv("CANVAS_TOKEN")
 
@@ -38,7 +41,9 @@ access_token <- Sys.getenv("CANVAS_TOKEN")
 # ---------------------------------------------
 courses <- 
   read_csv(file.path(sync_canvas_dir, "course_list.csv")) %>%
-  mutate(course_id = paste0("25000000", course_id))
+  mutate(course_id = paste0("", course_id))
+  # mutate(course_id = paste0("25000000", course_id))
+
 
 # ---------------------------------------------
 # Function that builds the folder structure
